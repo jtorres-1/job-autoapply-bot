@@ -51,6 +51,9 @@ Copy these:
 Base ID → starts with app...
 Table ID (under Table 1) → starts with tbl...
 
+Step 3: Set Environment Variables
+Create a .env file in the root directory or add them in Railway under “Environment”:
+
 AIRTABLE_TOKEN      = your_token_here
 AIRTABLE_BASE_ID    = your_base_id_here
 AIRTABLE_TABLE_NAME = your_table_id_here
@@ -61,11 +64,20 @@ Type: Date
 **With time enabled`
 Otherwise, logging will fail!
 
+
+
 5. Deploy to Railway
 
 Go to: https://railway.app
 Click New Project → Deploy from GitHub Repo
 Select the repo you cloned or created from template
+
+Make sure to add your environment variables in Railway after deployment:
+
+AIRTABLE_TOKEN
+AIRTABLE_BASE_ID
+AIRTABLE_TABLE_NAME
+
 ✅ Done — the bot will:
 
 Auto-apply to jobs from Remotive, RemoteOK, and WeWorkRemotely
